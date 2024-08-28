@@ -2,6 +2,13 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { environmentsComponent } from './src/concepts/environments';
+import { callbacksComponent } from './src/concepts/callbacks';
+import { promiseComponent } from './src/concepts/promises';
+import { promiseRaceComponent } from './src/concepts/promise-race';
+import { asyncComponent } from './src/concepts/async';
+import { asyncAwaitComponent } from './src/concepts/async-await';
+import { asyncAwaitNoSecComponent } from './src/concepts/async-await-no-sec';
+import { forAwaitComponent } from './src/concepts/for-await';
 
 
 document.querySelector('#app').innerHTML = `
@@ -22,4 +29,11 @@ document.querySelector('#app').innerHTML = `
 
 const element = document.querySelector('.card');
 
-environmentsComponent(element )
+// environmentsComponent(element );
+// callbacksComponent( element );
+// promiseComponent( element );
+// promiseRaceComponent(element);
+// asyncComponent(element);
+// asyncAwaitComponent(element);
+// asyncAwaitNoSecComponent(element);
+forAwaitComponent(element);
